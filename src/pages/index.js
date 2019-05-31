@@ -24,7 +24,7 @@ const IndexPage = () => {
   }, [])
   return (
     <div>
-      <div css={{ ...fixed, zIndex: 10 }}>
+      <div css={{ ...fixed, zIndex: 10, color: "hotpink", padding: 20 }}>
         <h1>USE CLIPPY NOW</h1>
       </div>
       <Torus css={{ ...fixed, zIndex: 9 }} />
