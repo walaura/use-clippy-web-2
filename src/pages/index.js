@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import Torus from "../components/torus"
-
+import { Global, css } from "@emotion/core"
 import { useClippy } from "use-clippy-now"
 
 const fixed = {
@@ -24,8 +24,21 @@ const IndexPage = () => {
   }, [])
   return (
     <div>
-      <div css={{ ...fixed, zIndex: 10, color: "hotpink", padding: 20 }}>
-        <h1>USE CLIPPY NOW</h1>
+      <div
+        css={{
+          ...fixed,
+          zIndex: 10,
+          color: "hotpink",
+          padding: 20,
+          textAlign: "center",
+        }}
+      >
+        <a
+          css={{ color: "inherit" }}
+          href="https://github.com/SaraVieira/useClippy"
+        >
+          <h1>npm i use-clippy-now</h1>
+        </a>
       </div>
       <Torus css={{ ...fixed, zIndex: 9 }} />
     </div>
